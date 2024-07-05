@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agradecimento</title>
+    <script>
+         // Função para redirecionar para outra página após um tempo determinado
+         function redirecionar() {
+            // Redireciona para a URL especificada após 5 segundos (5000 milissegundos)
+            setTimeout(function() {
+                window.location.href = 'index.html';
+            }, 7000);
+        }
+        
+    </script>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    .titulo{
+        white-space: nowrap;
+        font-size: 50px;
+        margin-left: 250px;
+        margin-top: 350px;
+        opacity: 0;
+        animation: slideDown-titulo 2s ease-in-out 10ms forwards;
+        color: #004F9E;
+
+        
+    }
+    .subtitulo{
+        margin-top: 30px;
+        margin-left: 25px;
+        font-size: 23px;
+        opacity: 0;
+        animation: slideDown 2s ease-in-out 10ms forwards;
+        color: #004F9E;
+    }
+  
+    #lions{
+        width: 240px;
+        height: auto;
+        margin-left: 1100px;
+        margin-top: -320px;
+        position: absolute;
+        animation: aparecer-lions 2s ease-in-out 10ms forwards;
+    }
+    #fubog{
+        width: 460px;
+        height: auto;
+        margin-left: -40px;
+        margin-top: -440px;
+        position: absolute;
+        animation: aparecer-fubog 2s ease-in-out 10ms forwards;
+
+    }
+    @keyframes slideDown{
+        0%{
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+
+        100%{
+            opacity: 1;
+            transform: translateY(10px);
+        }
+    }
+    @keyframes slideDown-titulo{
+        0%{
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+
+        100%{
+            opacity: 1;
+            transform: translateY(10px);
+        }
+    }
+    @keyframes aparecer-lions{
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+
+        }
+    }
+    @keyframes aparecer-fubog{
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+        }
+    }
+
+
+</style>
+<body onload="redirecionar()">
+    
+    <img id="fubog" src="img\logo fubog.png" alt="">
+    <img id="lions" src="img\Logo Lions.png" alt="">
+    
+    <div class="titulo">
+        MUITO OBRIGADO POR NOS AVALIAR
+    </div>
+
+    <div class="subtitulo">
+        Seus comentários são muito importantes e nos ajudarão a continuar melhorando para oferecer a você uma experiência melhor.  
+    </div>
+
+    <div class="back-white">
+         
+    </div>
+    
+</body>
+</html>
